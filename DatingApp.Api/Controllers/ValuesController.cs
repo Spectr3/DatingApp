@@ -18,6 +18,7 @@ namespace DatingApp.Api.Controllers
             _context = context;
         }
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult GetValues()
         {
@@ -26,6 +27,7 @@ namespace DatingApp.Api.Controllers
         }
 
         // GET api/values/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public IActionResult GetValue(int id)
         {
